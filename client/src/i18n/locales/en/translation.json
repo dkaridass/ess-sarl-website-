@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "achievements": "Achievements",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "header": {
+    "phone": "Phone",
+    "email": "Email",
+    "search": "Search",
+    "searchPlaceholder": "Search our site..."
+  },
+  "hero": {
+    "slide1": {
+      "title": "Leading Mining & Environmental Consultancy in DRC",
+      "subtitle": "Expert solutions for sustainable mining operations and regulatory compliance",
+      "description": "ESS SARL delivers comprehensive environmental impact assessments, mining consultancy services, and regulatory compliance solutions for mining and industrial companies across the Democratic Republic of Congo.",
+      "cta": "Request Consultation"
+    },
+    "slide2": {
+      "title": "Professional Safety Training & Compliance Services",
+      "subtitle": "Protecting your workforce and ensuring operational excellence",
+      "description": "ISO-certified safety training programs, risk assessments, and compliance auditing services designed specifically for mining operations, construction sites, and industrial facilities in the DRC.",
+      "cta": "View Training Programs"
+    },
+    "slide3": {
+      "title": "Sustainable Environmental Management Solutions",
+      "subtitle": "Minimizing environmental impact while maximizing operational efficiency",
+      "description": "From environmental monitoring to waste management and site rehabilitation, we help mining companies achieve sustainability goals while maintaining compliance with DRC mining codes and international standards.",
+      "cta": "Contact Our Team"
+    },
+    "learnMore": "Learn More",
+    "requestConsultation": "Request a Consultation",
+    "contactUs": "Contact Us Today"
+  },
+  "about": {
+    "title": "About ESS SARL",
+    "subtitle": "Pioneering Environmental and Safety Solutions in the Democratic Republic of Congo",
+    "heading": "Leading Environmental and Safety Consultancy in DRC",
+    "paragraph1": "Since our establishment, ESS SARL has been at the forefront of providing comprehensive solutions for environmental management, workplace safety, electrical maintenance, and construction in the Democratic Republic of Congo.",
+    "paragraph2": "Our team of expert consultants brings together decades of industry experience to deliver exceptional service and innovative solutions tailored to the unique challenges of industrial and mining operations in the region.",
+    "downloadEN": "Download Profile (EN)",
+    "downloadFR": "Download Profile (FR)",
+    "excellence": "Excellence in service delivery",
+    "excellenceSubtitle": "Providing sustainable solutions for complex challenges",
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the leading national and regional provider of integrated consultancy, training, and environmental solutions, empowering industries to achieve sustainable operational excellence and responsible environmental stewardship."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To provide innovative, reliable, and sustainable services in consultancy, training, and environmental management. We contribute to improving safety and productivity in industries through customized solutions that respect international standards and guarantee customer satisfaction."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "quality": {
+        "name": "Quality",
+        "description": "Commitment to providing high-quality services that meet the expectations of our clients."
+      },
+      "safety": {
+        "name": "Safety",
+        "description": "Absolute priority to the health and safety of people and equipment."
+      },
+      "innovation": {
+        "name": "Innovation",
+        "description": "Continuous search for modern and effective technical solutions."
+      },
+      "responsibility": {
+        "name": "Responsibility",
+        "description": "Respect for environmental and social standards in all our activities."
+      },
+      "collaboration": {
+        "name": "Collaboration",
+        "description": "Working in partnership with our clients to achieve their objectives."
+      }
+    },
+    "impact": {
+      "title": "Our Impact in Numbers",
+      "projects": "Projects Completed",
+      "clients": "Corporate Clients",
+      "experience": "Years of Experience",
+      "trained": "Professionals Trained"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Solutions for Environmental and Safety Challenges",
+    "environmental": {
+      "title": "Environmental Management",
+      "description": "Comprehensive environmental impact assessments, monitoring programs, and sustainable solutions for mining and industrial operations.",
+      "items": [
+        "Environmental Impact Assessments",
+        "Environmental Monitoring Programs",
+        "Waste Management Solutions",
+        "Rehabilitation & Closure Planning",
+        "Water Management Strategies"
+      ]
+    },
+    "safety": {
+      "title": "Safety & Health",
+      "description": "Expert consulting to ensure workplace safety, regulatory compliance, and risk management for your operations.",
+      "items": [
+        "Safety Management Systems",
+        "Risk Assessments & Audits",
+        "Safety Training Programs",
+        "Regulatory Compliance Services",
+        "Emergency Response Planning"
+      ]
+    },
+    "electrical": {
+      "title": "Electrical Services",
+      "description": "Professional electrical maintenance, installation, and optimization services for industrial facilities.",
+      "items": [
+        "Electrical System Maintenance",
+        "Power Distribution Design",
+        "Electrical Safety Audits",
+        "Energy Efficiency Solutions",
+        "Power Quality Analysis"
+      ]
+    },
+    "construction": {
+      "title": "Construction Management",
+      "description": "Comprehensive construction services from planning to execution for industrial and mining facilities.",
+      "items": [
+        "Project Planning & Management",
+        "Construction Supervision",
+        "Quality Control & Assurance",
+        "Site Safety Management",
+        "Earthworks & Civil Construction"
+      ]
+    },
+    "consulting": {
+      "title": "Specialized Consulting",
+      "description": "Expert advice and solutions for complex environmental and technical challenges in industrial settings.",
+      "items": [
+        "Permitting & Compliance",
+        "Technical Due Diligence",
+        "Operational Optimization",
+        "Sustainability Strategies",
+        "Environmental Training"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What Our Clients Say About Us"
+  },
+  "achievements": {
+    "title": "Our Achievements",
+    "subtitle": "Key Projects and Milestones",
+    "viewAll": "View All Achievements"
+  },
+  "blog": {
+    "title": "Latest News",
+    "subtitle": "Insights and Updates from ESS SARL",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "pageTitle": "ESS SARL Blog",
+    "pageDescription": "Stay updated with the latest news, insights, and developments in environmental and safety solutions.",
+    "showing": "Showing {count} of {total} articles",
+    "in": "in",
+    "matching": "matching",
+    "noArticlesFound": "No articles found",
+    "tryAdjusting": "Try adjusting your search or filter criteria.",
+    "resetFilters": "Reset Filters",
+    "search": "Search articles",
+    "categories": {
+      "mining": "Mining",
+      "safety": "Safety",
+      "environment": "Environment",
+      "training": "Training",
+      "news": "News",
+      "general": "General"
+    },
+    "backToBlog": "Back to Blog",
+    "blogPostNotFound": "Blog post not found",
+    "aboutAuthor": "About the Author",
+    "authorExpertise": {
+      "mining": "mining environmental management",
+      "safety": "industrial safety protocols",
+      "environment": "environmental assessment and impact mitigation",
+      "training": "professional development and training",
+      "general": "environmental and safety solutions"
+    },
+    "relatedArticles": "Related Articles",
+    "postInfo": {
+      "publishedOn": "Published on",
+      "by": "by",
+      "readingTime": "Reading time"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "office": "Main Office",
+    "formTitle": "Send us a message",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "success": "Your message has been sent successfully!",
+    "error": "There was an error sending your message. Please try again."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our services"
+  },
+  "footer": {
+    "about": "About ESS SARL",
+    "aboutText": "ESS SARL is a leading provider of environmental and safety solutions, serving the mining and industrial sectors in the Democratic Republic of Congo.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactInfo": "Contact Information",
+    "preBanner": {
+      "title": "Looking for expert environmental and safety solutions?"
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "subtitle": "Stay updated with our latest news and insights",
+      "placeholder": "Your Email Address",
+      "button": "Subscribe",
+      "sending": "Sending...",
+      "subscribedSuccessfully": "Thank you for subscribing to our newsletter!",
+      "consent": "By subscribing, you agree to receive our newsletter emails. You can unsubscribe at any time.",
+      "success": "Thank you for subscribing!",
+      "error": "There was an error. Please try again."
+    },
+    "copyright": "All rights reserved.",
+    "links": {
+      "careers": "Careers",
+      "news": "News",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for might have been removed or is temporarily unavailable.",
+    "button": "Back to Home"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French"
+  },
+  "chatbot": {
+    "title": "ESS SARL Assistant",
+    "toggleLabel": "Chat with us",
+    "closeLabel": "Close chat",
+    "initialMessage": "Hello! I'm the ESS SARL virtual assistant. I can provide information about our expert environmental and safety consultancy services for industrial and mining operations in the DRC.\n\nYou can ask me about:\n• Our services (consultancy, training, environmental solutions)\n• Our company background and values\n• Our impact and achievements\n• Contact information\n\nHow can I assist you today?",
+    "inputPlaceholder": "Type your message here...",
+    "sendButton": "Send",
+    "errorTitle": "Chatbot Error",
+    "errorMessage": "Failed to get a response. Please try again later.",
+    "defaultErrorResponse": "Sorry, I encountered an error. Please try again later."
+  },
+  "seo": {
+    "defaultTitle": "ESS SARL - Leading Mining & Environmental Consultancy in DRC | Regulatory Compliance Experts",
+    "defaultDescription": "ESS SARL delivers expert mining consultancy, environmental impact assessments, and safety compliance solutions for mining and industrial operations across the Democratic Republic of Congo. ISO 14001 certified with proven results.",
+    "defaultKeywords": "mining consultancy DRC, environmental consulting Congo, mining safety training, regulatory compliance DRC, environmental impact assessment, mining operations consultancy, industrial safety solutions, DRC mining regulations, sustainable mining practices, environmental management systems",
+    "home": {
+      "title": "ESS SARL - Expert Mining & Environmental Consultancy in DRC | Safety Training & Compliance",
+      "description": "Leading environmental and safety consultancy for mining operations in DRC. Expert services include environmental impact assessments, regulatory compliance, safety training, and sustainable mining solutions. Contact us for professional consultation."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about ESS SARL's mission, vision, values, and the expert team driving our environmental and safety solutions in the DRC."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Explore our comprehensive range of environmental consulting, safety training, electrical services, and construction management solutions."
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "description": "See what our clients say about ESS SARL's environmental and safety solutions consultancy services."
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "description": "Discover ESS SARL's key projects, milestones, and successful environmental and safety solutions implementations."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Get the latest insights, news, and updates from ESS SARL on environmental management, safety solutions, and industry trends."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about ESS SARL's environmental consulting and safety solutions services."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with ESS SARL for expert environmental and safety solutions consultancy services in the Democratic Republic of Congo."
+    }
+  }
+}

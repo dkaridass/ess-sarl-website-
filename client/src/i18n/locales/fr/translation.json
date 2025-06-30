@@ -1,0 +1,298 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "testimonials": "Témoignages",
+    "achievements": "Réalisations",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "header": {
+    "phone": "Téléphone",
+    "email": "Email",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher sur notre site..."
+  },
+  "hero": {
+    "slide1": {
+      "title": "Services de Conseil Environnemental",
+      "subtitle": "Leader dans les solutions d'exploitation minière durable",
+      "description": "ESS SARL donne aux entreprises minières et industrielles les moyens d'adopter des pratiques durables grâce à des conseils environnementaux experts, des orientations en matière de conformité réglementaire et des pratiques de gestion durable.",
+      "cta": "En Savoir Plus"
+    },
+    "slide2": {
+      "title": "Solutions de Sécurité pour Industries",
+      "subtitle": "Assurer la sécurité et la conformité sur le lieu de travail",
+      "description": "Des programmes de formation complets conçus pour améliorer la sécurité des travailleurs, la sensibilisation à l'environnement et la conformité réglementaire pour les sites miniers et de construction.",
+      "cta": "Nos Services"
+    },
+    "slide3": {
+      "title": "Solutions Industrielles Intégrées",
+      "subtitle": "Services complets pour l'excellence opérationnelle",
+      "description": "Aider les entreprises à minimiser leur empreinte environnementale tout en maintenant l'efficacité opérationnelle et la conformité aux réglementations de la RDC et internationales.",
+      "cta": "Contactez-Nous"
+    },
+    "learnMore": "En Savoir Plus"
+  },
+  "about": {
+    "title": "À Propos d'ESS SARL",
+    "subtitle": "Pionnier des solutions environnementales et de sécurité en République Démocratique du Congo",
+    "heading": "Leader en Conseil Environnemental et Sécurité en RDC",
+    "paragraph1": "Depuis notre création, ESS SARL est à l'avant-garde de la fourniture de solutions complètes pour la gestion environnementale, la sécurité au travail, la maintenance électrique et la construction en République Démocratique du Congo.",
+    "paragraph2": "Notre équipe de consultants experts réunit des décennies d'expérience dans l'industrie pour offrir un service exceptionnel et des solutions innovantes adaptées aux défis uniques des opérations industrielles et minières dans la région.",
+    "downloadEN": "Télécharger le Profil (EN)",
+    "downloadFR": "Télécharger le Profil (FR)",
+    "excellence": "Excellence dans la prestation de services",
+    "excellenceSubtitle": "Fournir des solutions durables pour des défis complexes",
+    "vision": {
+      "title": "Notre Vision",
+      "text": "Être le principal fournisseur national et régional de services intégrés de conseil, de formation et de solutions environnementales, permettant aux industries d'atteindre l'excellence opérationnelle durable et une gestion environnementale responsable."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "text": "Fournir des services innovants, fiables et durables en matière de conseil, de formation et de gestion environnementale. Nous contribuons à améliorer la sécurité et la productivité dans les industries grâce à des solutions personnalisées qui respectent les normes internationales et garantissent la satisfaction du client."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "quality": {
+        "name": "Qualité",
+        "description": "Engagement à fournir des services de haute qualité qui répondent aux attentes de nos clients."
+      },
+      "safety": {
+        "name": "Sécurité",
+        "description": "Priorité absolue à la santé et à la sécurité des personnes et des équipements."
+      },
+      "innovation": {
+        "name": "Innovation",
+        "description": "Recherche continue de solutions techniques modernes et efficaces."
+      },
+      "responsibility": {
+        "name": "Responsabilité",
+        "description": "Respect des normes environnementales et sociales dans toutes nos activités."
+      },
+      "collaboration": {
+        "name": "Collaboration",
+        "description": "Travailler en partenariat avec nos clients pour atteindre leurs objectifs."
+      }
+    },
+    "impact": {
+      "title": "Notre Impact en Chiffres",
+      "projects": "Projets Réalisés",
+      "clients": "Clients Corporatifs",
+      "experience": "Années d'Expérience",
+      "trained": "Professionnels Formés"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions Complètes pour les Défis Environnementaux et de Sécurité",
+    "environmental": {
+      "title": "Gestion Environnementale",
+      "description": "Évaluations d'impact environnemental complètes, programmes de surveillance et solutions durables pour les opérations minières et industrielles.",
+      "items": [
+        "Évaluations d'Impact Environnemental",
+        "Programmes de Surveillance Environnementale",
+        "Solutions de Gestion des Déchets",
+        "Planification de Réhabilitation et Fermeture",
+        "Stratégies de Gestion de l'Eau"
+      ]
+    },
+    "safety": {
+      "title": "Sécurité et Santé",
+      "description": "Conseil expert pour assurer la sécurité sur le lieu de travail, la conformité réglementaire et la gestion des risques pour vos opérations.",
+      "items": [
+        "Systèmes de Gestion de la Sécurité",
+        "Évaluations des Risques et Audits",
+        "Programmes de Formation à la Sécurité",
+        "Services de Conformité Réglementaire",
+        "Planification d'Intervention d'Urgence"
+      ]
+    },
+    "electrical": {
+      "title": "Services Électriques",
+      "description": "Services professionnels de maintenance, d'installation et d'optimisation électrique pour les installations industrielles.",
+      "items": [
+        "Maintenance des Systèmes Électriques",
+        "Conception de Distribution Électrique",
+        "Audits de Sécurité Électrique",
+        "Solutions d'Efficacité Énergétique",
+        "Analyse de la Qualité de l'Alimentation"
+      ]
+    },
+    "construction": {
+      "title": "Gestion de la Construction",
+      "description": "Services de construction complets, de la planification à l'exécution, pour les installations industrielles et minières.",
+      "items": [
+        "Planification et Gestion de Projet",
+        "Supervision de la Construction",
+        "Contrôle et Assurance Qualité",
+        "Gestion de la Sécurité du Site",
+        "Terrassement et Construction Civile"
+      ]
+    },
+    "consulting": {
+      "title": "Conseil Spécialisé",
+      "description": "Conseils et solutions d'experts pour des défis environnementaux et techniques complexes dans les environnements industriels.",
+      "items": [
+        "Permis et Conformité",
+        "Due Diligence Technique",
+        "Optimisation Opérationnelle",
+        "Stratégies de Durabilité",
+        "Formation Environnementale"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages Clients",
+    "subtitle": "Ce que nos Clients Disent de Nous"
+  },
+  "achievements": {
+    "title": "Nos Réalisations",
+    "subtitle": "Projets Clés et Étapes Importantes",
+    "viewAll": "Voir Toutes les Réalisations"
+  },
+  "blog": {
+    "title": "Dernières Actualités",
+    "subtitle": "Perspectives et Mises à Jour d'ESS SARL",
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tous les Articles",
+    "pageTitle": "Blog ESS SARL",
+    "pageDescription": "Restez informé des dernières actualités, perspectives et développements en matière de solutions environnementales et de sécurité.",
+    "showing": "Affichage de {count} sur {total} articles",
+    "in": "dans",
+    "matching": "correspondant à",
+    "noArticlesFound": "Aucun article trouvé",
+    "tryAdjusting": "Essayez d'ajuster vos critères de recherche ou de filtrage.",
+    "resetFilters": "Réinitialiser les Filtres",
+    "search": "Rechercher des articles",
+    "categories": {
+      "mining": "Exploitation Minière",
+      "safety": "Sécurité",
+      "environment": "Environnement",
+      "training": "Formation",
+      "news": "Actualités",
+      "general": "Général"
+    },
+    "backToBlog": "Retour au Blog",
+    "blogPostNotFound": "Article de blog non trouvé",
+    "aboutAuthor": "À propos de l'auteur",
+    "authorExpertise": {
+      "mining": "la gestion environnementale minière",
+      "safety": "les protocoles de sécurité industrielle",
+      "environment": "l'évaluation environnementale et l'atténuation des impacts",
+      "training": "le développement professionnel et la formation",
+      "general": "les solutions environnementales et de sécurité"
+    },
+    "relatedArticles": "Articles Connexes",
+    "postInfo": {
+      "publishedOn": "Publié le",
+      "by": "par",
+      "readingTime": "Temps de lecture"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Entrez en contact avec notre équipe",
+    "office": "Bureau Principal",
+    "formTitle": "Envoyez-nous un message",
+    "name": "Votre Nom",
+    "email": "Adresse Email",
+    "phone": "Numéro de Téléphone",
+    "subject": "Sujet",
+    "message": "Votre Message",
+    "submit": "Envoyer le Message",
+    "success": "Votre message a été envoyé avec succès !",
+    "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Trouvez des réponses aux questions courantes sur nos services"
+  },
+  "footer": {
+    "about": "À Propos d'ESS SARL",
+    "aboutText": "ESS SARL est un fournisseur de premier plan de solutions environnementales et de sécurité, servant les secteurs miniers et industriels en République Démocratique du Congo.",
+    "quickLinks": "Liens Rapides",
+    "services": "Nos Services",
+    "contactInfo": "Coordonnées",
+    "preBanner": {
+      "title": "Besoin de solutions expertes en environnement et sécurité ?"
+    },
+    "newsletter": {
+      "title": "Abonnez-vous à Notre Newsletter",
+      "subtitle": "Restez informé de nos dernières actualités et perspectives",
+      "placeholder": "Votre Adresse Email",
+      "button": "S'abonner",
+      "sending": "Envoi en cours...",
+      "subscribedSuccessfully": "Merci de vous être abonné à notre newsletter !",
+      "consent": "En vous abonnant, vous acceptez de recevoir nos e-mails de newsletter. Vous pouvez vous désabonner à tout moment.",
+      "success": "Merci pour votre abonnement !",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "copyright": "Tous droits réservés.",
+    "links": {
+      "careers": "Carrières",
+      "news": "Actualités",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation"
+    }
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "message": "La page que vous recherchez a peut-être été supprimée ou est temporairement indisponible.",
+    "button": "Retour à l'Accueil"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "chatbot": {
+    "title": "Assistant ESS SARL",
+    "toggleLabel": "Discuter avec nous",
+    "closeLabel": "Fermer la discussion",
+    "initialMessage": "Bonjour ! Je suis l'assistant virtuel d'ESS SARL. Je peux vous fournir des informations sur nos services experts de conseil en environnement et sécurité pour les opérations industrielles et minières en RDC.\n\nVous pouvez me demander des renseignements sur :\n• Nos services (conseil, formation, solutions environnementales)\n• Notre entreprise et nos valeurs\n• Notre impact et nos réalisations\n• Nos coordonnées\n\nComment puis-je vous aider aujourd'hui ?",
+    "inputPlaceholder": "Tapez votre message ici...",
+    "sendButton": "Envoyer",
+    "errorTitle": "Erreur de l'Assistant",
+    "errorMessage": "Échec de la réponse. Veuillez réessayer plus tard.",
+    "defaultErrorResponse": "Désolé, j'ai rencontré une erreur. Veuillez réessayer plus tard."
+  },
+  "seo": {
+    "defaultTitle": "ESS SARL - Solutions Environnementales et de Sécurité",
+    "defaultDescription": "ESS SARL fournit des services complets de conseil en solutions environnementales et de sécurité pour les opérations minières et industrielles en République Démocratique du Congo.",
+    "defaultKeywords": "conseil environnemental, solutions de sécurité, RDC, sécurité minière, gestion environnementale, formation à la sécurité",
+    "home": {
+      "title": "Accueil",
+      "description": "ESS SARL offre des services experts de conseil, de formation et de solutions environnementales pour les opérations industrielles en République Démocratique du Congo."
+    },
+    "about": {
+      "title": "À Propos",
+      "description": "Découvrez la mission, la vision, les valeurs d'ESS SARL et l'équipe d'experts qui dirige nos solutions environnementales et de sécurité en RDC."
+    },
+    "services": {
+      "title": "Nos Services",
+      "description": "Explorez notre gamme complète de services de conseil environnemental, de formation à la sécurité, de services électriques et de gestion de la construction."
+    },
+    "testimonials": {
+      "title": "Témoignages",
+      "description": "Découvrez ce que nos clients disent des services de conseil en solutions environnementales et de sécurité d'ESS SARL."
+    },
+    "achievements": {
+      "title": "Nos Réalisations",
+      "description": "Découvrez les projets clés, les étapes importantes et les mises en œuvre réussies de solutions environnementales et de sécurité par ESS SARL."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Obtenez les dernières perspectives, actualités et mises à jour d'ESS SARL sur la gestion environnementale, les solutions de sécurité et les tendances de l'industrie."
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "description": "Trouvez des réponses aux questions courantes sur les services de conseil environnemental et de solutions de sécurité d'ESS SARL."
+    },
+    "contact": {
+      "title": "Contactez-Nous",
+      "description": "Contactez ESS SARL pour des services experts de conseil en solutions environnementales et de sécurité en République Démocratique du Congo."
+    }
+  }
+}
