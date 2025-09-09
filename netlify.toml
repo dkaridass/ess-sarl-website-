@@ -1,6 +1,6 @@
 [build]
   # Build command for static site
-  command = "npm run build:static"
+  command = "npm install --legacy-peer-deps && npm run build:static"
   
   # Directory to publish
   publish = "dist"
