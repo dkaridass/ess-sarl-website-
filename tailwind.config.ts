@@ -16,6 +16,19 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        // ESS SARL Custom Color Palette
+        'primary-green': '#1B4D3E',
+        'primary-blue': '#2C5F7C',
+        'primary-copper': '#B87333',
+        'sage-green': '#8FBC8F',
+        'charcoal': '#36454F',
+        'light-blue': '#E6F3FF',
+        'gold-accent': '#D4AF37',
+        'success': '#28A745',
+        'warning': '#FFC107',
+        'alert': '#DC3545',
+        
+        // Shadcn/ui colors
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

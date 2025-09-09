@@ -9,6 +9,11 @@ import BuildingServices from "../components/home/BuildingServices";
 import Sustainability from "../components/home/Sustainability";
 import AchievementsSection from "../components/home/Achievements";
 import TestimonialsSection from "../components/home/Testimonials";
+import EnhancedTestimonials from "../components/home/EnhancedTestimonials";
+import LeadGeneration from "../components/home/LeadGeneration";
+import ComplianceCalculator from "../components/home/ComplianceCalculator";
+import TeamSection from "../components/home/TeamSection";
+import CaseStudies from "../components/home/CaseStudies";
 import FaqSection from "../components/home/Faq";
 import BackToTop from "../components/home/BackToTop";
 import SEO from "../components/seo/SEO";
@@ -33,7 +38,11 @@ export default function Home() {
       <BuildingServices />
       <Sustainability />
       <AchievementsSection />
-      <TestimonialsSection />
+      <EnhancedTestimonials />
+      <ComplianceCalculator />
+      <CaseStudies />
+      <TeamSection />
+      <LeadGeneration />
       <FaqSection />
       <BackToTop />
     </>

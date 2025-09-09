@@ -22,44 +22,50 @@ export default function Header() {
 
   return (
     <header className={`sticky top-0 z-50 shadow-md transition-all duration-300`}>
-      {/* Top Mini Bar */}
-      <div className="bg-[#30B4F2] py-1 text-white text-xs hidden md:block">
+      {/* Enhanced Top Mini Bar */}
+      <div className="bg-gradient-to-r from-primary-green to-primary-blue py-2 text-white text-xs hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center divide-x divide-white/20">
-            <a href="tel:+243838704393" className="flex items-center hover:text-white/90 transition-colors pr-4">
-              <i className="fas fa-phone-alt mr-2 text-xs"></i>
-              <span>+243 83 870 43 93</span>
+            <a href="tel:+243838704393" className="flex items-center hover:text-white/90 transition-colors pr-4 group">
+              <i className="fas fa-phone-alt mr-2 text-xs group-hover:scale-110 transition-transform"></i>
+              <span className="font-medium">+243 83 870 43 93</span>
             </a>
-            <a href="mailto:office@ess-sarl.com" className="flex items-center hover:text-white/90 transition-colors px-4">
-              <i className="fas fa-envelope mr-2 text-xs"></i>
-              <span>office@ess-sarl.com</span>
+            <a href="mailto:office@ess-sarl.com" className="flex items-center hover:text-white/90 transition-colors px-4 group">
+              <i className="fas fa-envelope mr-2 text-xs group-hover:scale-110 transition-transform"></i>
+              <span className="font-medium">office@ess-sarl.com</span>
             </a>
-            <span className="px-4">
+            <span className="px-4 flex items-center">
               <i className="fas fa-map-marker-alt mr-2 text-xs"></i>
-              <span>Lubumbashi, Democratic Republic of Congo</span>
+              <span className="font-medium">Lubumbashi, Democratic Republic of Congo</span>
             </span>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="#" className="text-white hover:text-white/90 transition-colors">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" className="text-white hover:text-white/90 transition-colors">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="text-white hover:text-white/90 transition-colors">
-              <i className="fab fa-twitter"></i>
-            </a>
+            <div className="flex items-center space-x-2 text-xs">
+              <span className="font-medium">Free Consultation:</span>
+              <span className="bg-white/20 px-2 py-1 rounded-full font-bold">This Month</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <a href="#" className="text-white hover:text-white/90 transition-colors hover:scale-110 transform">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" className="text-white hover:text-white/90 transition-colors hover:scale-110 transform">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="text-white hover:text-white/90 transition-colors hover:scale-110 transform">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
       
       {/* Secondary Navigation */}
-      <div className="bg-gray-100 border-b border-gray-200 py-0.5 hidden md:block">
+      <div className="bg-gray-50 border-b border-gray-200 py-0.5 hidden md:block">
         <div className="container mx-auto px-4 flex justify-end">
           <div className="flex items-center text-xs text-gray-600">
-            <a href="#" className="px-3 py-1 hover:text-[#30B4F2]">Careers</a>
-            <Link href="/blog" className="px-3 py-1 hover:text-[#30B4F2]">{t('nav.blog')}</Link>
-            <a href="#" className="px-3 py-1 hover:text-[#30B4F2]">Media</a>
+            <a href="#" className="px-3 py-1 hover:text-primary-blue transition-colors">Careers</a>
+            <Link href="/blog" className="px-3 py-1 hover:text-primary-blue transition-colors">{t('nav.blog')}</Link>
+            <a href="#" className="px-3 py-1 hover:text-primary-blue transition-colors">Media</a>
             <div className="flex items-center border-l border-gray-300 pl-3 ml-3">
               <span className="pr-2">Language:</span>
               <LanguageSwitcher />
@@ -72,11 +78,11 @@ export default function Header() {
       <nav className={`${isScrolled ? "py-2" : "py-3"} bg-white transition-all duration-300`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#home" className="flex items-center bg-white p-1 rounded-sm">
+            <a href="#home" className="flex items-center bg-white p-2 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
               <img 
                 src={logoImage} 
                 alt="ESS SARL Logo" 
-                className={`${isScrolled ? "h-14" : "h-16"} md:${isScrolled ? "h-14" : "h-20"} w-auto object-contain transition-all duration-300 max-w-[160px] md:max-w-none`} 
+                className={`${isScrolled ? "h-16" : "h-20"} md:${isScrolled ? "h-18" : "h-24"} w-auto object-contain transition-all duration-300 max-w-[200px] md:max-w-[250px]`} 
               />
             </a>
           </div>
@@ -87,16 +93,17 @@ export default function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="font-medium text-sm px-3 py-2 text-gray-700 hover:text-[#30B4F2] border-b-2 border-transparent hover:border-[#30B4F2] transition-all"
+                className="font-medium text-sm px-3 py-2 text-gray-700 hover:text-primary-blue border-b-2 border-transparent hover:border-primary-copper transition-all"
               >
                 {t(`nav.${item.label.toLowerCase()}`)}
               </a>
             ))}
             <a 
               href="#contact" 
-              className="ml-2 bg-[#30B4F2] hover:bg-[#228CBF] text-white px-5 py-2 text-sm font-medium transition-colors duration-300"
+              className="ml-2 btn-primary px-6 py-2.5 text-sm font-semibold"
             >
-              {t('nav.contact')}
+              <i className="fas fa-calendar-alt mr-2"></i>
+              Free Consultation
             </a>
           </div>
 
@@ -117,7 +124,7 @@ export default function Header() {
             <input 
               type="text" 
               placeholder={t('header.searchPlaceholder')}
-              className="w-full py-1 px-4 pl-10 text-sm border border-gray-300 focus:outline-none focus:border-[#30B4F2] rounded-sm"
+              className="w-full py-1 px-4 pl-10 text-sm border border-gray-300 focus:outline-none focus:border-[#2C5F7C] rounded-sm"
             />
             <i className="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
           </div>
@@ -132,7 +139,7 @@ export default function Header() {
               <input 
                 type="text" 
                 placeholder={t('header.searchPlaceholder')}
-                className="w-full py-2 px-4 pl-10 text-sm border border-gray-300 focus:outline-none focus:border-[#30B4F2] rounded-sm bg-gray-50"
+                className="w-full py-2 px-4 pl-10 text-sm border border-gray-300 focus:outline-none focus:border-[#2C5F7C] rounded-sm bg-gray-50"
               />
               <i className="fas fa-search absolute left-7 top-5 text-gray-400"></i>
             </div>
@@ -141,7 +148,7 @@ export default function Header() {
               <a 
                 key={item.label}
                 href={item.href}
-                className="block py-2 hover:text-[#30B4F2] transition-colors border-b border-gray-100"
+                className="block py-2 hover:text-[#2C5F7C] transition-colors border-b border-gray-100"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t(`nav.${item.label.toLowerCase()}`)}
@@ -149,9 +156,9 @@ export default function Header() {
             ))}
             
             <div className="pt-2 flex flex-col space-y-2">
-              <a href="#" className="text-sm hover:text-[#30B4F2]">Careers</a>
-              <Link href="/blog" className="text-sm hover:text-[#30B4F2]">{t('nav.blog')}</Link>
-              <a href="#" className="text-sm hover:text-[#30B4F2]">Media</a>
+              <a href="#" className="text-sm hover:text-[#2C5F7C] transition-colors">Careers</a>
+              <Link href="/blog" className="text-sm hover:text-[#2C5F7C] transition-colors">{t('nav.blog')}</Link>
+              <a href="#" className="text-sm hover:text-[#2C5F7C] transition-colors">Media</a>
             </div>
             
             <div className="flex items-center space-x-2 pt-2 border-t border-gray-100">
@@ -162,7 +169,7 @@ export default function Header() {
             <div className="pt-3">
               <a 
                 href="#contact" 
-                className="block text-center bg-[#30B4F2] hover:bg-[#228CBF] text-white px-6 py-2 text-sm font-medium transition-colors duration-300"
+                className="block text-center btn-primary px-6 py-2 text-sm font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t('nav.contact')}

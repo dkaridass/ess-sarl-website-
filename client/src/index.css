@@ -1,13 +1,409 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Source+Sans+Pro:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Modern Color Palette for Mining & Environmental Consultancy */
+:root {
+  /* Primary Colors */
+  --primary-green: #1B4D3E;
+  --primary-blue: #2C5F7C;
+  --primary-copper: #B87333;
+  --primary-white: #FFFFFF;
+  
+  /* Supporting Colors */
+  --sage-green: #8FBC8F;
+  --charcoal: #36454F;
+  --light-blue: #E6F3FF;
+  --gold-accent: #D4AF37;
+  
+  /* Status Colors */
+  --success: #28A745;
+  --warning: #FFC107;
+  --alert: #DC3545;
+  
+  /* Typography */
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Inter', sans-serif;
+  --accent-font: 'Source Sans Pro', sans-serif;
+}
+
+/* Enhanced CSS for ESS SARL */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    color: var(--charcoal);
+    background-color: var(--primary-white);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--primary-green);
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; color: var(--primary-blue); }
+  h3 { font-size: 1.5rem; color: var(--charcoal); }
+  h4 { font-size: 1.25rem; color: var(--primary-copper); }
+}
+
+@layer components {
+  /* Enhanced Button Styles */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+    color: var(--primary-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(27, 77, 62, 0.2);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 77, 62, 0.3);
+  }
+  
+  .btn-secondary {
+    background-color: var(--primary-copper);
+    color: var(--primary-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(184, 115, 51, 0.2);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--gold-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(184, 115, 51, 0.3);
+  }
+  
+  .btn-success {
+    background-color: var(--success);
+    color: var(--primary-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: var(--primary-white);
+    border: 1px solid var(--light-blue);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 95, 124, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(44, 95, 124, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .card-gradient {
+    background: linear-gradient(135deg, var(--primary-white) 0%, var(--light-blue) 100%);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 95, 124, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card-gradient:hover {
+    box-shadow: 0 4px 16px rgba(44, 95, 124, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Animation Classes */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 0.6s ease-out;
+  }
+  
+  .fade-in-right {
+    animation: fadeInRight 0.6s ease-out;
+  }
+  
+  .scale-in {
+    animation: scaleIn 0.5s ease-out;
+  }
+  
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Trust Badge */
+  .trust-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success);
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-left: 3px solid var(--primary-copper);
+  }
+  
+  /* Service Card Hover Effect */
+  .service-card {
+    background-color: var(--primary-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 95, 124, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--light-blue);
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 8px 25px rgba(44, 95, 124, 0.15);
+    transform: translateY(-4px);
+    border-color: var(--primary-copper);
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    background: linear-gradient(135deg, var(--sage-green) 0%, var(--light-blue) 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(44, 95, 124, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary-copper);
+  }
+  
+  .testimonial-card:hover {
+    box-shadow: 0 8px 25px rgba(44, 95, 124, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Form Input Styles */
+  .form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-family: var(--body-font);
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(44, 95, 124, 0.1);
+  }
+  
+  /* Section Spacing */
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  /* Container Styles */
+  .container-custom {
+    @apply container mx-auto px-4 max-w-7xl;
+  }
+}
+
+@layer utilities {
+  /* Custom Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Scroll Animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Gradient Backgrounds */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, var(--sage-green) 0%, var(--light-blue) 100%);
+  }
+  
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, var(--primary-copper) 0%, var(--gold-accent) 100%);
+  }
+  
+  /* Text Gradients */
+  .text-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Accent Elements */
+  .accent-border {
+    border-left: 4px solid var(--primary-copper);
+  }
+  
+  .highlight-text {
+    color: var(--primary-copper);
+    font-weight: 600;
+  }
+  
+  .success-highlight {
+    color: var(--success);
+    background-color: rgba(40, 167, 69, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .warning-highlight {
+    color: var(--warning);
+    background-color: rgba(255, 193, 7, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  /* Shadow Utilities */
+  .shadow-custom {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .shadow-custom-lg {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Border Utilities */
+  .border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--primary-white), var(--primary-white)) padding-box,
+                linear-gradient(135deg, var(--primary-green), var(--primary-blue)) border-box;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-copper));
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--primary-copper);
+  color: var(--primary-white);
+}
+
+/* Focus Styles */
+.focus-ring {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(44, 95, 124, 0.2);
+}
+
+/* Loading Animation */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @layer base {
   * {
-    @apply border-neutral-200;
+    border-color: var(--light-blue);
   }
 
   body {
-    @apply font-sans antialiased bg-white text-gray-900;
+    font-family: var(--body-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary-white);
+    color: var(--charcoal);
   }
 }

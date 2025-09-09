@@ -114,7 +114,7 @@ export default function Hero() {
                   <div className={`transition-all duration-500 transform ${
                     currentSlide === index ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
                   }`}>
-                    <div className="w-24 h-1 bg-[#30B4F2] mb-6"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-primary-green to-primary-blue mb-6"></div>
                     <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                       {slide.title}
                     </h1>
@@ -127,14 +127,14 @@ export default function Hero() {
                     <div className="flex flex-wrap gap-4">
                       <a 
                         href={index === 0 ? "/contact" : index === 1 ? "#services" : "/contact"} 
-                        className="bg-[#30B4F2] hover:bg-[#228CBF] text-white px-6 py-3 font-semibold transition-colors duration-300 flex items-center text-sm rounded-sm shadow-lg hover:shadow-xl transform hover:scale-105"
+                        className="btn-primary px-6 py-3 font-semibold flex items-center text-sm rounded-sm"
                       >
                         <span>{t('hero.slide' + (index + 1) + '.cta')}</span>
                         <i className="fas fa-arrow-right ml-2"></i>
                       </a>
                       <a 
                         href="/contact" 
-                        className="bg-transparent hover:bg-white/10 text-white border-2 border-white px-6 py-3 font-semibold transition-colors duration-300 text-sm rounded-sm"
+                        className="border-2 border-white hover:border-primary-copper px-6 py-3 font-semibold transition-colors duration-300 text-sm rounded-sm"
                       >
                         {t('hero.requestConsultation')}
                       </a>
@@ -161,7 +161,7 @@ export default function Hero() {
                       setTimeout(() => setIsAnimating(false), 500);
                     }}
                     className={`w-3 h-3 rounded-full transition-all ${
-                      currentSlide === index ? "bg-[#30B4F2] w-12" : "bg-white/50 hover:bg-white/80"
+                      currentSlide === index ? "bg-gradient-to-r from-primary-green to-primary-blue w-12" : "bg-white/50 hover:bg-white/80"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
@@ -171,14 +171,14 @@ export default function Hero() {
               <div className="flex items-center space-x-2">
                 <button 
                   onClick={prevSlide}
-                  className="w-10 h-10 flex items-center justify-center text-white hover:text-[#30B4F2] transition-colors"
+                  className="w-10 h-10 flex items-center justify-center text-white hover:text-primary-copper transition-colors"
                   aria-label="Previous slide"
                 >
                   <i className="fas fa-chevron-left"></i>
                 </button>
                 <button 
                   onClick={nextSlide}
-                  className="w-10 h-10 flex items-center justify-center text-white hover:text-[#30B4F2] transition-colors"
+                  className="w-10 h-10 flex items-center justify-center text-white hover:text-primary-copper transition-colors"
                   aria-label="Next slide"
                 >
                   <i className="fas fa-chevron-right"></i>
@@ -189,39 +189,80 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Feature Boxes - SRK Style */}
+      {/* Trust Indicators Bar */}
       <div className="relative bg-white border-t border-gray-200 z-20">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center">
+                <i className="fas fa-check text-success text-xs"></i>
+              </div>
+              <span className="font-medium">500+ Projects Completed</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                <i className="fas fa-certificate text-primary-blue text-xs"></i>
+              </div>
+              <span className="font-medium">ISO 14001 Certified</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center">
+                <i className="fas fa-users text-primary-copper text-xs"></i>
+              </div>
+              <span className="font-medium">50+ Corporate Clients</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center">
+                <i className="fas fa-star text-gold-accent text-xs"></i>
+              </div>
+              <span className="font-medium">15+ Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Enhanced Feature Boxes */}
+      <div className="relative bg-gradient-to-br from-gray-50 to-white z-20">
         <div className="container mx-auto px-4 py-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 -mt-20 shadow-xl">
-            <div className="bg-[#30B4F2] hover:bg-[#228CBF] transition-colors p-8 text-white group">
-              <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
-                <i className="fas fa-handshake"></i>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 -mt-16 shadow-2xl rounded-t-2xl overflow-hidden">
+            <div className="bg-gradient-to-r from-primary-green to-primary-blue hover:bg-gradient-to-r hover:from-primary-blue hover:to-primary-green transition-all duration-300 p-8 text-white group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
+              <div className="relative z-10">
+                <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
+                  <i className="fas fa-handshake"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-2">{t('services.consulting.title')}</h3>
+                <p className="mb-4 opacity-90 text-sm leading-relaxed">{t('services.consulting.description')}</p>
+                <a href="#services" className="inline-flex items-center text-white hover:text-white/80 font-medium group">
+                  {t('hero.learnMore')} <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
               </div>
-              <h3 className="text-xl font-bold mb-2">{t('services.consulting.title')}</h3>
-              <p className="mb-4 opacity-90">{t('services.consulting.description')}</p>
-              <a href="#services" className="inline-flex items-center text-white hover:text-white/80 font-medium">
-                {t('hero.learnMore')} <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-              </a>
             </div>
-            <div className="bg-[#1E5631] hover:bg-[#15402A] transition-colors p-8 text-white group">
-              <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
-                <i className="fas fa-graduation-cap"></i>
+            <div className="bg-gradient-to-r from-sage-green to-light-blue hover:bg-gradient-to-r hover:from-light-blue hover:to-sage-green transition-all duration-300 p-8 text-white group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
+              <div className="relative z-10">
+                <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
+                  <i className="fas fa-graduation-cap"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-2">{t('services.safety.title')}</h3>
+                <p className="mb-4 opacity-90 text-sm leading-relaxed">{t('services.safety.description')}</p>
+                <a href="#services" className="inline-flex items-center text-white hover:text-white/80 font-medium group">
+                  {t('hero.learnMore')} <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
               </div>
-              <h3 className="text-xl font-bold mb-2">{t('services.safety.title')}</h3>
-              <p className="mb-4 opacity-90">{t('services.safety.description')}</p>
-              <a href="#services" className="inline-flex items-center text-white hover:text-white/80 font-medium">
-                {t('hero.learnMore')} <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-              </a>
             </div>
-            <div className="bg-gray-800 hover:bg-gray-900 transition-colors p-8 text-white group">
-              <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
-                <i className="fas fa-leaf"></i>
+            <div className="bg-gradient-to-r from-primary-copper to-gold-accent hover:bg-gradient-to-r hover:from-gold-accent hover:to-primary-copper transition-all duration-300 p-8 text-white group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
+              <div className="relative z-10">
+                <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
+                  <i className="fas fa-leaf"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-2">{t('services.environmental.title')}</h3>
+                <p className="mb-4 opacity-90 text-sm leading-relaxed">{t('services.environmental.description')}</p>
+                <a href="#services" className="inline-flex items-center text-white hover:text-white/80 font-medium group">
+                  {t('hero.learnMore')} <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
               </div>
-              <h3 className="text-xl font-bold mb-2">{t('services.environmental.title')}</h3>
-              <p className="mb-4 opacity-90">{t('services.environmental.description')}</p>
-              <a href="#services" className="inline-flex items-center text-white hover:text-white/80 font-medium">
-                {t('hero.learnMore')} <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-              </a>
             </div>
           </div>
         </div>
