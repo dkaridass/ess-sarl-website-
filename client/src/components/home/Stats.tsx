@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { statistics } from "@/lib/constants";
+import { AnimatedVisuals, AnimatedText } from "@/components/ui/AnimatedVisuals";
 
 export default function Stats() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -40,11 +41,21 @@ export default function Stats() {
       {/* SRK-style Stats Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="w-16 h-1 bg-[#30B4F2] mx-auto mb-5"></div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Our Impact</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <div className="w-16 h-1 bg-[#30B4F2] mx-auto mb-5 animate-pulse-glow"></div>
+          <AnimatedText.FadeInHeading className="text-3xl md:text-4xl font-bold mb-4 text-white">Our Impact</AnimatedText.FadeInHeading>
+          <AnimatedText.SlideUpText className="text-gray-300 max-w-2xl mx-auto">
             Transforming industrial practices across the Democratic Republic of Congo with sustainable environmental and safety solutions
-          </p>
+          </AnimatedText.SlideUpText>
+        </div>
+
+        {/* Custom Visual Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="hover-lift animate-scale-in">
+            <AnimatedVisuals.MiningHero />
+          </div>
+          <div className="hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <AnimatedVisuals.EnvironmentalHero />
+          </div>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">

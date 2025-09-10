@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedVisuals, AnimatedText } from "@/components/ui/AnimatedVisuals";
 import environmentalSafetyImage from "../../assets/images/services/environmental-safety.jpg";
 
 export default function About() {
@@ -7,11 +8,27 @@ export default function About() {
       <div className="container mx-auto px-4">
         {/* SRK-style Section Header */}
         <div className="mb-12 text-center">
-          <div className="w-20 h-1 bg-[#30B4F2] mx-auto mb-5"></div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About ESS SARL</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <div className="w-20 h-1 bg-[#30B4F2] mx-auto mb-5 animate-pulse-glow"></div>
+          <AnimatedText.FadeInHeading className="text-3xl md:text-4xl font-bold mb-4">About ESS SARL</AnimatedText.FadeInHeading>
+          <AnimatedText.SlideUpText className="text-gray-600 max-w-3xl mx-auto">
             Pioneering Environmental and Safety Solutions in the Democratic Republic of Congo
-          </p>
+          </AnimatedText.SlideUpText>
+        </div>
+
+        {/* Custom Visual Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="hover-lift animate-scale-in">
+            <AnimatedVisuals.MiningHero />
+          </div>
+          <div className="hover-lift animate-scale-in" style={{animationDelay: '0.1s'}}>
+            <AnimatedVisuals.EnvironmentalHero />
+          </div>
+          <div className="hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <AnimatedVisuals.SafetyHero />
+          </div>
+          <div className="hover-lift animate-scale-in" style={{animationDelay: '0.3s'}}>
+            <AnimatedVisuals.InnovationHero />
+          </div>
         </div>
 
         {/* Main About Content - SRK Style */}

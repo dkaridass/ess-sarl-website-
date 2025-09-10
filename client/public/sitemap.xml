@@ -1,100 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ess-sarl.com/</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://ess-sarl.netlify.app/</loc>
+    <lastmod>2024-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- About Page -->
   <url>
-    <loc>https://ess-sarl.com/about</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://ess-sarl.netlify.app/about</loc>
+    <lastmod>2024-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Services Page -->
   <url>
-    <loc>https://ess-sarl.com/services</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://ess-sarl.netlify.app/services</loc>
+    <lastmod>2024-09-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Contact Page -->
   <url>
-    <loc>https://ess-sarl.com/contact</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://ess-sarl.netlify.app/contact</loc>
+    <lastmod>2024-09-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog Page -->
-  <url>
-    <loc>https://ess-sarl.com/blog</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Blog Posts -->
   <url>
-    <loc>https://ess-sarl.com/blog/drc-mining-regulations-2025-compliance-strategies</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://ess-sarl.netlify.app/blog</loc>
+    <lastmod>2024-09-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://ess-sarl.com/blog/environmental-risk-assessment-drc-mining-framework</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ess-sarl.com/blog/industrial-safety-management-systems-drc-implementation</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ess-sarl.com/blog/training-excellence-drc-industrial-operations-building-capacity</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Achievements Page -->
-  <url>
-    <loc>https://ess-sarl.com/achievements</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://ess-sarl.netlify.app/testimonials</loc>
+    <lastmod>2024-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Testimonials Page -->
-  <url>
-    <loc>https://ess-sarl.com/testimonials</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- FAQ Page -->
-  <url>
-    <loc>https://ess-sarl.com/faq</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
 </urlset>
