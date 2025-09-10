@@ -225,6 +225,8 @@
     transform: scale(1.05);
   }
 }
+
+@layer base {
   html {
     scroll-behavior: smooth;
   }
