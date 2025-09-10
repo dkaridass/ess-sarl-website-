@@ -3,7 +3,7 @@
   command = "npm install && npm run build"
   
   # Directory to publish
-  publish = "dist"
+  publish = "dist/public"
   
   # Functions directory (if using Netlify Functions)
   functions = "netlify/functions"
@@ -14,12 +14,6 @@
   
   # Build environment variables
   NODE_ENV = "production"
-
-# Redirect rules for SPA (Single Page Application)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 # Headers for security and performance
 [[headers]]
