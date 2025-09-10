@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 // Import team member images
 import elieImage from "../assets/images/team/elie.jpg";
-import reneImage from "../assets/images/team/rene.jpg"; // Use lowercase .jpg extension
+import reneImage from "../assets/images/team/rene.JPG"; // Use uppercase .JPG extension
 import dariusImage from "../assets/images/team/darius.jpg";
 import joelImage from "../assets/images/team/joel.jpg";
 import fistonImage from "../assets/images/team/fiston.jpg";
