@@ -28,8 +28,8 @@ export default function SEO({
     "@type": "Organization",
     "name": "ESS SARL",
     "description": "Environmental and Safety Solutions SARL - Leading consultancy in the Democratic Republic of Congo",
-    "url": "https://ess-sarl.netlify.app",
-    "logo": "https://ess-sarl.netlify.app/assets/images/logo/ess-logo.png",
+    "url": "https://ess-sarl.com",
+    "logo": "https://ess-sarl.com/assets/images/logo/ess-logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+243-XXX-XXX-XXX",
@@ -78,7 +78,7 @@ export default function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonical || "https://ess-sarl.netlify.app"} />
+      <meta property="og:url" content={canonical || "https://ess-sarl.com"} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="ESS SARL" />
       <meta property="og:locale" content="en_US" />
@@ -135,25 +135,25 @@ export default function SEO({
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://ess-sarl.netlify.app"
+              "item": "https://ess-sarl.com"
             },
             {
               "@type": "ListItem", 
               "position": 2,
               "name": "Services",
-              "item": "https://ess-sarl.netlify.app/services"
+              "item": "https://ess-sarl.com/services"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "About",
-              "item": "https://ess-sarl.netlify.app/about"
+              "item": "https://ess-sarl.com/about"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Contact",
-              "item": "https://ess-sarl.netlify.app/contact"
+              "item": "https://ess-sarl.com/contact"
             }
           ]
         })}
