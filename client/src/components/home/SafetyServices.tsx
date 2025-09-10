@@ -131,7 +131,7 @@ export default function SafetyServices() {
         
         {/* Introduction Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="w-16 h-1 bg-red-600 mx-auto mb-6"></div>
+          <div className="w-16 h-1 bg-[#30B4F2] mx-auto mb-6"></div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Health & Safety Services
           </h2>
@@ -143,11 +143,11 @@ export default function SafetyServices() {
           </p>
           
           {/* Download Section */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-lg p-8 text-white">
+          <div className="bg-gradient-to-r from-[#30B4F2] to-[#1E5631] rounded-lg p-8 text-white">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="text-left mb-6 md:mb-0">
                 <h3 className="text-2xl font-bold mb-2">Health & Safety Services Profile 2025</h3>
-                <p className="text-red-100">
+                <p className="text-blue-100">
                   Download our comprehensive HSE consulting portfolio including safety management systems, 
                   compliance training, and risk management strategies for the mining and industrial sectors.
                 </p>
@@ -155,7 +155,7 @@ export default function SafetyServices() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="/ESS-HSE-Profile-2025.pdf" 
-                  className="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 font-semibold rounded-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center"
+                  className="bg-white text-[#30B4F2] hover:bg-gray-100 px-6 py-3 font-semibold rounded-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center"
                   download
                 >
                   <i className="fas fa-download mr-2"></i>
@@ -163,7 +163,7 @@ export default function SafetyServices() {
                 </a>
                 <a 
                   href="/contact" 
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 px-6 py-3 font-semibold rounded-sm transition-all duration-300 flex items-center"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#30B4F2] px-6 py-3 font-semibold rounded-sm transition-all duration-300 flex items-center"
                 >
                   <i className="fas fa-phone mr-2"></i>
                   Request Safety Assessment
@@ -194,7 +194,7 @@ export default function SafetyServices() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[#30B4F2] rounded-full flex items-center justify-center mb-4">
                   <i className={`fas ${item.icon} text-white text-lg`}></i>
                 </div>
                 <h4 className="text-lg font-bold mb-3 text-gray-900">{item.title}</h4>
@@ -231,7 +231,7 @@ export default function SafetyServices() {
             {coreServices.map((service, index) => (
               <div key={index} className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#30B4F2] rounded-full flex items-center justify-center mr-4">
                     <i className={`fas ${service.icon} text-white text-lg`}></i>
                   </div>
                   <h4 className="text-xl font-bold text-gray-900">{service.title}</h4>
@@ -242,7 +242,7 @@ export default function SafetyServices() {
                 <div className="grid grid-cols-1 gap-2">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center">
-                      <i className="fas fa-check text-red-600 mr-3 text-sm"></i>
+                      <i className="fas fa-check text-[#30B4F2] mr-3 text-sm"></i>
                       <span className="text-sm text-gray-700">{feature}</span>
                     </div>
                   ))}
@@ -253,11 +253,11 @@ export default function SafetyServices() {
         </div>
 
         {/* Service Portfolio */}
-        <div className="bg-red-600 rounded-lg p-8 mb-16 text-white">
+        <div className="bg-[#1E5631] rounded-lg p-8 mb-16 text-white">
           <h3 className="text-2xl font-bold mb-8 text-center">
             Proven Solutions for Safer Workplaces and Stronger Compliance
           </h3>
-          <p className="text-red-100 text-center mb-8 max-w-4xl mx-auto">
+          <p className="text-green-100 text-center mb-8 max-w-4xl mx-auto">
             ESS SARL showcases proven strategies and industry-leading solutions that help businesses implement 
             effective safety protocols and mitigate risks. From compliance audits to emergency response planning, 
             we deliver tangible results that protect employees, optimize operations, and uphold safety standards.
@@ -287,7 +287,7 @@ export default function SafetyServices() {
           <div className="flex flex-wrap justify-center gap-4">
             <a 
               href="/contact" 
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 font-semibold rounded-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="bg-[#30B4F2] hover:bg-[#228CBF] text-white px-8 py-3 font-semibold rounded-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Schedule Safety Assessment
             </a>

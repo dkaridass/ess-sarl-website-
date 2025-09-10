@@ -2,9 +2,9 @@ import { useState } from "react";
 import { services } from "@/lib/constants";
 // Import images for proper asset handling
 import brownCoalMining from "@assets/images/brown-coal-mining-111365.jpg";
-import colleaguesTeamWorking from "@assets/attached_assets/colleagues-team-working-company-paperwork-doig-teamwork-analyze-documents-online-research-information-planning-corporate-presentation-with-data-charts-job-collaboration.jpg";
-import engineerCooperation from "@assets/attached_assets/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop-control-quality-operate-process-work-heavy-industry-40-manufacturing-factory.jpg";
-import womanEngineer from "@assets/attached_assets/woman-working-as-engineer.jpg";
+import colleaguesTeamWorking from "@assets/optimized/colleagues-team-working.jpg";
+import engineerCooperation from "@assets/optimized/engineer-cooperation.jpg";
+import womanEngineer from "@assets/optimized/woman-engineer.jpg";
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState("consultancy");

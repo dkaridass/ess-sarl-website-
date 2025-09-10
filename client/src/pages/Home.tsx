@@ -5,7 +5,6 @@ import ServicesSection from "../components/home/Services";
 import EnvironmentalServices from "../components/home/EnvironmentalServices";
 import SafetyServices from "../components/home/SafetyServices";
 import TrainingServices from "../components/home/TrainingServices";
-import BuildingServices from "../components/home/BuildingServices";
 import Sustainability from "../components/home/Sustainability";
 import AchievementsSection from "../components/home/Achievements";
 import TestimonialsSection from "../components/home/Testimonials";
@@ -35,7 +34,6 @@ export default function Home() {
       <EnvironmentalServices />
       <SafetyServices />
       <TrainingServices />
-      <BuildingServices />
       <Sustainability />
       <AchievementsSection />
       <EnhancedTestimonials />
