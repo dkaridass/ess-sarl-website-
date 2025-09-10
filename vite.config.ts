@@ -33,6 +33,8 @@ export default defineConfig({
   build: {
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
+    copyPublicDir: true,
   },
+  publicDir: path.resolve(__dirname, "client", "public"),
   assetsInclude: ["**/*.JPG", "**/*.jpg", "**/*.png", "**/*.svg", "**/*.webp"],
 });
