@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import LazyImage from "@/components/ui/LazyImage";
 import { preloadImages } from "../../utils/imageOptimization";
+import { AnimatedText } from "@/components/ui/AnimatedVisuals";
 
 // Import new project images
 import miningImage from "../../assets/images/brown-coal-mining-111365.jpg";
@@ -111,30 +112,31 @@ export default function Hero() {
               {/* Slide Content */}
               <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-end pb-32">
                 <div className="max-w-3xl slide-content">
-                  <div className={`transition-all duration-500 transform ${
-                    currentSlide === index ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+                  <div className={`transition-all duration-700 transform ${
+                    currentSlide === index ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                   }`}>
-                    <div className="w-24 h-1 bg-gradient-to-r from-primary-green to-primary-blue mb-6"></div>
-                    <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                    <div className="w-24 h-1 bg-gradient-to-r from-[#30B4F2] to-[#1E5631] mb-6 animate-pulse-glow"></div>
+                    <AnimatedText.FadeInHeading className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                       {slide.title}
-                    </h1>
-                    <p className="text-xl text-white mb-4 font-light">
+                    </AnimatedText.FadeInHeading>
+                    <AnimatedText.SlideUpText className="text-xl text-white mb-4 font-light">
                       {slide.subtitle}
-                    </p>
-                    <p className="text-gray-300 mb-8 max-w-xl">
+                    </AnimatedText.SlideUpText>
+                    <AnimatedText.SlideUpText className="text-gray-300 mb-8 max-w-xl">
                       {slide.description}
-                    </p>
+                    </AnimatedText.SlideUpText>
                     <div className="flex flex-wrap gap-4">
                       <a 
                         href={index === 0 ? "/contact" : index === 1 ? "#services" : "/contact"} 
-                        className="btn-primary px-6 py-3 font-semibold flex items-center text-sm rounded-sm"
+                        className="btn-primary px-6 py-3 font-semibold flex items-center text-sm rounded-sm hover-lift animate-scale-in"
                       >
                         <span>{t('hero.slide' + (index + 1) + '.cta')}</span>
-                        <i className="fas fa-arrow-right ml-2"></i>
+                        <i className="fas fa-arrow-right ml-2 animate-float"></i>
                       </a>
                       <a 
                         href="/contact" 
-                        className="border-2 border-white hover:border-primary-copper px-6 py-3 font-semibold transition-colors duration-300 text-sm rounded-sm"
+                        className="border-2 border-white hover:border-[#30B4F2] px-6 py-3 font-semibold transition-all duration-300 text-sm rounded-sm hover-lift animate-scale-in hover-glow"
+                        style={{animationDelay: '0.2s'}}
                       >
                         {t('hero.requestConsultation')}
                       </a>

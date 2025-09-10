@@ -2,9 +2,10 @@ import { useState } from "react";
 import { services } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { AnimatedVisuals, AnimatedText } from "@/components/ui/AnimatedVisuals";
 import consultancyImage from "../../assets/images/services/consultancy-specific.jpg";
-import trainingImage from "../../assets/images/services/training-specific.jpg";
-import environmentalImage from "../../assets/images/services/environmental-specific.jpg";
+import trainingImage from "../../assets/optimized/engineer-cooperation.jpg";
+import environmentalImage from "../../assets/optimized/woman-engineer.jpg";
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState("consultancy");
@@ -13,9 +14,13 @@ export default function Services() {
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="w-16 h-1 bg-[#30B4F2] mx-auto mb-6"></div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Professional Mining & Environmental Services</h2>
-          <p className="text-lg text-gray-600 mb-6">Expert consultancy services for sustainable mining operations, regulatory compliance, and environmental stewardship in the Democratic Republic of Congo</p>
+          <div className="w-16 h-1 bg-[#30B4F2] mx-auto mb-6 animate-pulse-glow"></div>
+          <AnimatedText.FadeInHeading className="text-3xl md:text-4xl font-bold mb-4">
+            Professional Mining & Environmental Services
+          </AnimatedText.FadeInHeading>
+          <AnimatedText.SlideUpText className="text-lg text-gray-600 mb-6">
+            Expert consultancy services for sustainable mining operations, regulatory compliance, and environmental stewardship in the Democratic Republic of Congo
+          </AnimatedText.SlideUpText>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
               href="/contact" 
@@ -32,25 +37,25 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Featured Service Grid - SRK Style */}
+        {/* Featured Service Grid with Animated Visuals */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
-          <div className="group">
-            <div className="relative overflow-hidden">
+          <div className="group hover-lift animate-scale-in">
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
                 src={consultancyImage} 
                 alt="Consultancy Services" 
-                className="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500" 
+                className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-700" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 w-full">
-                <h3 className="text-white text-xl font-bold mb-2">Consultancy Services</h3>
-                <p className="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-white text-xl font-bold mb-2 animate-fade-in">Consultancy Services</h3>
+                <p className="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translateY(-2px)">
                   Expert guidance to optimize operations and ensure regulatory compliance
                 </p>
                 <a 
                   href="#consultancy" 
                   onClick={(e) => {e.preventDefault(); setActiveTab("consultancy");}} 
-                  className="text-[#30B4F2] bg-white inline-block px-4 py-2 rounded-sm font-medium hover:bg-[#30B4F2] hover:text-white transition-colors"
+                  className="text-[#30B4F2] bg-white inline-block px-4 py-2 rounded-sm font-medium hover:bg-[#30B4F2] hover:text-white transition-all duration-300 transform hover:scale-105"
                 >
                   Learn More
                 </a>
@@ -58,23 +63,18 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="group">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/src/assets/attached_assets/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop-control-quality-operate-process-work-heavy-industry-40-manufacturing-factory.jpg"
-                alt="Training & Mentoring"
-                className="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          <div className="group hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <AnimatedVisuals.TrainingHero />
               <div className="absolute bottom-0 left-0 p-6 w-full">
-                <h3 className="text-white text-xl font-bold mb-2">Training & Mentoring</h3>
-                <p className="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-white text-xl font-bold mb-2 animate-fade-in">Training & Mentoring</h3>
+                <p className="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translateY(-2px)">
                   Comprehensive programs for professional development and certification
                 </p>
                 <a 
                   href="#training" 
                   onClick={(e) => {e.preventDefault(); setActiveTab("training");}}
-                  className="text-[#30B4F2] bg-white inline-block px-4 py-2 rounded-sm font-medium hover:bg-[#30B4F2] hover:text-white transition-colors"
+                  className="text-[#30B4F2] bg-white inline-block px-4 py-2 rounded-sm font-medium hover:bg-[#30B4F2] hover:text-white transition-all duration-300 transform hover:scale-105"
                 >
                   Learn More
                 </a>
@@ -82,23 +82,18 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="group">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/src/assets/attached_assets/woman-working-as-engineer.jpg"
-                alt="Environmental Services" 
-                className="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          <div className="group hover-lift animate-scale-in" style={{animationDelay: '0.4s'}}>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <AnimatedVisuals.EnvironmentalHero />
               <div className="absolute bottom-0 left-0 p-6 w-full">
-                <h3 className="text-white text-xl font-bold mb-2">Environmental Services</h3>
-                <p className="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-white text-xl font-bold mb-2 animate-fade-in">Environmental Services</h3>
+                <p className="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translateY(-2px)">
                   Sustainable practices for responsible environmental management
                 </p>
                 <a 
                   href="#environmental" 
                   onClick={(e) => {e.preventDefault(); setActiveTab("environmental");}}
-                  className="text-[#30B4F2] bg-white inline-block px-4 py-2 rounded-sm font-medium hover:bg-[#30B4F2] hover:text-white transition-colors"
+                  className="text-[#30B4F2] bg-white inline-block px-4 py-2 rounded-sm font-medium hover:bg-[#30B4F2] hover:text-white transition-all duration-300 transform hover:scale-105"
                 >
                   Learn More
                 </a>
